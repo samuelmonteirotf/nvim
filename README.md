@@ -1,37 +1,37 @@
 # Neovim — Personal Setup
 
-Configuração pessoal do Neovim construída sobre o LazyVim, otimizada para performance, simplicidade e fluxo contínuo de desenvolvimento.
+Personal Neovim configuration built on top of LazyVim, optimized for performance, simplicity, and uninterrupted development flow.
 
-Focada principalmente em projetos Rust, TypeScript e React/Next.js, mantendo um ambiente leve, previsível e totalmente orientado ao teclado.
-
----
-
-## Princípios
-
-- Inicialização rápida com lazy-loading agressivo
-- Experiência de IDE sem poluição visual
-- Navegação e ações críticas 100% via teclado
-- Integração nativa com Git, LSP e busca global
-- Setup enxuto: apenas o que acelera o fluxo
+Primarily focused on Rust, TypeScript, and React/Next.js projects while keeping the environment lightweight, predictable, and fully keyboard‑driven.
 
 ---
 
-## Stack suportada
+## Principles
 
-- Rust (rust-analyzer + tooling cargo)
+- Fast startup with aggressive lazy-loading
+- IDE-level features without visual clutter
+- Keyboard-first navigation and actions
+- Native integration with Git, LSP, and global search
+- Lean setup: only what improves real workflow
+
+---
+
+## Supported Stack
+
+- Rust (rust-analyzer + cargo tooling)
 - TypeScript / React / Next.js
-- Lua (configuração e extensões)
-- Suporte genérico para outras linguagens via LSP
+- Lua (config and extensions)
+- Generic LSP support for other languages
 
 ---
 
-## Requisitos
+## Requirements
 
-Antes da instalação, garanta que possui:
+Before installing, make sure you have:
 
 - Neovim ≥ 0.9
 - Git
-- Nerd Font configurada no terminal
+- Nerd Font configured in your terminal
 - ripgrep
 - fd
 - lazygit
@@ -39,59 +39,59 @@ Antes da instalação, garanta que possui:
 
 ---
 
-## Instalação
+## Installation
 
-Backup da config atual:
+Backup your current config:
 
 ```bash
 mv ~/.config/nvim ~/.config/nvim.bak
 ```
 
-Clone do repositório:
+Clone the repository:
 
 ```bash
 git clone git@github.com:samuelmonteirotf/nvim.git ~/.config/nvim
 ```
 
-Primeira execução:
+First launch:
 
 ```bash
 nvim
 ```
 
-Os plugins serão instalados automaticamente via lazy.nvim.
+Plugins will be installed automatically via lazy.nvim.
 
 ---
 
-## Keymaps principais
+## Main Keymaps
 
-Leader: Espaço
+Leader: Space
 
-Navegação:
-- <leader>ff → Buscar arquivos
-- <leader>fg → Buscar texto
-- <C-h/j/k/l> → Navegar splits
+Navigation:
+- <leader>ff → Find files
+- <leader>fg → Live grep
+- <C-h/j/k/l> → Navigate splits
 - <leader>, / <leader>. → Buffers
-- <leader>bd → Fechar buffer
+- <leader>bd → Close buffer
 
 Harpoon:
-- <leader>a → Marcar arquivo
-- <C-e> → Lista Harpoon
+- <leader>a → Mark file
+- <C-e> → Harpoon menu
 
 Git:
 - <leader>gg → Lazygit
 
 LSP:
-- gd → Definição
-- gr → Referências
+- gd → Definition
+- gr → References
 - <leader>ca → Code actions
 
 Terminal:
-- <leader>' → Terminal flutuante
+- <leader>' → Floating terminal
 
 ---
 
-## Estrutura
+## Structure
 
 ```
 lua/
@@ -104,6 +104,6 @@ lua/
 
 ---
 
-## Licença
+## License
 
 MIT
